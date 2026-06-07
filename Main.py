@@ -54,7 +54,7 @@ for llave,valor in EquiposFinales.items():
 
 columnas = ["equipo", "ganados", "empatados", "perdidos", "goles_favor", "goles_contra", "puntos", "diferencia_goles"]
 #escribe el diccionario final en un archivo csv
-with open("output/Equipos_salida", "w", newline="") as archivo_csv:
+with open("output/Equipos_salida.csv", "w", newline="") as archivo_csv:
    escritor = csv.DictWriter(archivo_csv, fieldnames=columnas)
    escritor.writeheader()
    for equipo, datos in EquiposFinales.items():
